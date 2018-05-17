@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1526486302742,87,1.1 /pae-web/loginCiudadano,404,Not Found,Ciudadanos Thread Group 1-1,text,false,,1308,414,1,1,87,0,65
+1526486301212,87,1.1 /pae-web/loginCiudadano,,"Number of samples in transaction : 1, number of failing samples : 1",Ciudadanos Thread Group 1-1,,false,,1308,414,1,1,87,1534,65
+1526486301212,87,1.- Main Page,,"Number of samples in transaction : 1, number of failing samples : 1",Ciudadanos Thread Group 1-1,,false,,1308,414,1,1,87,1534,65
+1526486303913,39,2.1 /pae-web/ciudadano/login,404,Not Found,Ciudadanos Thread Group 1-1,text,false,,1308,665,1,1,39,0,34
+1526486305198,15,2.2 /pae-web/ciudadano/,404,Not Found,Ciudadanos Thread Group 1-1,text,false,,1308,500,1,1,15,0,5
+1526486302834,54,2.1 /pae-web/ciudadano/login,,"Number of samples in transaction : 2, number of failing samples : 2",Ciudadanos Thread Group 1-1,,false,,2616,1165,1,1,54,2330,39
+1526486302834,54,2.- Login Page,,"Number of samples in transaction : 2, number of failing samples : 2",Ciudadanos Thread Group 1-1,,false,,2616,1165,1,1,54,2330,39
+1526486306698,13,3.1 /pae-web/ciudadano/fui,404,Not Found,Ciudadanos Thread Group 1-1,text,false,,1308,490,1,1,13,0,6
+1526486305218,13,3.1 /pae-web/ciudadano/fui,,"Number of samples in transaction : 1, number of failing samples : 1",Ciudadanos Thread Group 1-1,,false,,1308,490,1,1,13,1480,6
+1526486305218,13,3.- Menu Inicial Page,,"Number of samples in transaction : 1, number of failing samples : 1",Ciudadanos Thread Group 1-1,,false,,1308,490,1,1,13,1480,6
