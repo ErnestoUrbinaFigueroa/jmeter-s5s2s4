@@ -1,1 +1,10 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,grpThreads,allThreads,Latency,Connect
+1526594173937,169,8.2 /pae-web/ciudadano/fui/terminar,200,OK,Ciudadanos Thread Group 1-1,text,true,,1,1,160,27
+1526594156629,14851,8.1 /pae-web/ciudadano/fui/resumen/?sFunId=lyRp7wdOIvORLcP+TQm9rQ==,200,"Number of samples in transaction : 2, number of failing samples : 0",Ciudadanos Thread Group 1-1,,true,,1,1,282,27
+1526594156629,14851,8.- Paso 5 - Resumen Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Ciudadanos Thread Group 1-1,,true,,1,1,282,27
+1526594377639,185,8.2 /pae-web/ciudadano/fui/terminar,200,OK,Ciudadanos Thread Group 1-1,text,true,,1,1,182,46
+1526594368734,6592,8.1 /pae-web/ciudadano/fui/resumen/?sFunId=lyRp7wdOIvORLcP+TQm9rQ==,200,"Number of samples in transaction : 2, number of failing samples : 0",Ciudadanos Thread Group 1-1,,true,,1,1,295,46
+1526594368734,6592,8.- Paso 5 - Resumen Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Ciudadanos Thread Group 1-1,,true,,1,1,295,46
+1526594751851,150,8.2 /pae-web/ciudadano/fui/terminar,200,OK,Ciudadanos Thread Group 1-1,text,true,,1,1,145,6
+1526594742827,6358,8.1 /pae-web/ciudadano/fui/resumen/?sFunId=lyRp7wdOIvORLcP+TQm9rQ==,200,"Number of samples in transaction : 2, number of failing samples : 0",Ciudadanos Thread Group 1-1,,true,,1,1,250,6
+1526594742827,6358,8.- Paso 5 - Resumen Page,200,"Number of samples in transaction : 2, number of failing samples : 0",Ciudadanos Thread Group 1-1,,true,,1,1,250,6

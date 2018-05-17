@@ -3041,7 +3041,7 @@
               <sampleCount>true</sampleCount>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Jmeter\apache-jmeter-4.0\bin\suseso_doc\RESULT_TREE_SUSESO.csv</stringProp>
+          <stringProp name="filename">suseso_doc\RESULT_TREE_SUSESO.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -3077,7 +3077,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Jmeter\apache-jmeter-4.0\bin\suseso_doc\SUMMARY_SUSESO.csv</stringProp>
+          <stringProp name="filename">suseso_doc\SUMMARY_SUSESO.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
