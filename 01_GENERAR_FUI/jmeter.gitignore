@@ -1,0 +1,12 @@
+# Log File
+*.log
+
+# Recording
+recording.xml
+
+# Resultados
+suseso_doc/Folios_Generados.csv
+suseso_doc/RESULT_TREE_SUSESO.csv
+suseso_doc/summary.csv
+suseso_doc/SUMMARY_SUSESO.csv
+suseso_doc/Validacion_Folios.csv
