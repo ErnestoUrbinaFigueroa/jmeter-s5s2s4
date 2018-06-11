@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="FOLIO" elementType="Argument">
             <stringProp name="Argument.name">FOLIO</stringProp>
-            <stringProp name="Argument.value">1315</stringProp>
+            <stringProp name="Argument.value">1316</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2239,7 +2239,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2292,7 +2292,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2345,7 +2345,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2467,7 +2467,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2520,7 +2520,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2573,7 +2573,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2626,7 +2626,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2679,7 +2679,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2732,7 +2732,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3211,7 +3211,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3319,7 +3319,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;bpmWorklistHttpURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces&amp;bpmWorklistHome=home.jspx&amp;bpmWorklistReassign=reassignTask.jspx&amp;bpmWorklistRoute=routeTask.jspx&amp;bpmWorklistRequestInfo=requestInfo.jspx&amp;bpmWorklistSecurity=signTask.jspx&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=http%3A%2F%2Fpaedevldom%3A7203&amp;</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar/?refreshParentURL=${refreshParentURL}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistHttpURL=${bpmWorklistHttpURL}&amp;bpmWorklistHome=${bpmWorklistHome}&amp;bpmWorklistReassign=${bpmWorklistReassign}&amp;bpmWorklistRoute=${bpmWorklistRoute}&amp;bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&amp;bpmWorklistSecurity=${bpmWorklistSecurity}&amp;tz=Chile%2FContinental&amp;lg=es&amp;cy=ES&amp;vr=&amp;dispNameLg=es&amp;dispNameCy=ES&amp;dispNameVr=&amp;df=medium&amp;dt=both&amp;tf=short&amp;sf=alta&amp;acMode=default&amp;bpmWorklistSessionTimeoutInterval=900&amp;soaUrl=${soaUrl}&amp;</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3668,7 +3668,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3721,7 +3721,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3774,7 +3774,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3827,7 +3827,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3880,7 +3880,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3933,7 +3933,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3986,7 +3986,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4039,7 +4039,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4092,7 +4092,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694%3B%3BG%3B%3BQ3YhR3xAiyjiPV4VIqyJPOCs9%2FOL274hfSnTWHLoKinaaydokhvncA%2BETUbxTEkg4aKuJq%2FMPk4w%2FYEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A%3D%3D&amp;refreshParentURL=http%3A%2F%2Fpaeqaohs.tecnova.cl%3A80%2Fbpm%2Fworkspace%2Ffaces%2FrefreshParentTaskList.jspx%3FrefreshTaskListBtnId%3Dwlctdc%3Aj_id__ctru10%3Ar1%3A0%3Atldc%3AfetchNewTask&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/revisar?bpmWorklistContext=${bpmWorklistContext}&amp;refreshParentURL=${refreshParentURL}&amp;customAcquireURL=revisar&amp;customReleaseURL=revisar&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4721,7 +4721,7 @@
               <stringProp name="HTTPSampler.domain">paeqaohs.tecnova.cl</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">/pae-bpm-web/guardarFormulario?_csrf=${_csrf}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -4928,7 +4928,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/guardarFormulario?_csrf=${_csrf}&amp;bpmWorklistContext=bpmWorklistContext&amp;bpmWorklistTaskId=bpmWorklistTaskId</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/guardarFormulario?_csrf=${_csrf}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -5161,7 +5161,7 @@
               <stringProp name="HTTPSampler.domain">paeqaohs.tecnova.cl</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">/pae-bpm-web/aprobar?_csrf=${_csrf}</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
