@@ -35,7 +35,7 @@
           </elementProp>
           <elementProp name="EXPEDIENTE" elementType="Argument">
             <stringProp name="Argument.name">EXPEDIENTE</stringProp>
-            <stringProp name="Argument.value">R-72-2018</stringProp>
+            <stringProp name="Argument.value">R-70-2018</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2626,7 +2626,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="09 LOGOFF" enabled="false">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="09 LOGOFF" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
@@ -2963,7 +2963,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="83 /bpm/workspace/" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="83 /bpm/workspace/" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="_afrLoop" elementType="HTTPArgument">
@@ -2971,96 +2971,112 @@
                     <stringProp name="Argument.name">_afrLoop</stringProp>
                     <stringProp name="Argument.value">764213547596771</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrWindowMode" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrWindowMode</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="Adf-Window-Id" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">Adf-Window-Id</stringProp>
                     <stringProp name="Argument.value">w1291ez4ms3</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrFS" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrFS</stringProp>
                     <stringProp name="Argument.value">16</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMT" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMT</stringProp>
                     <stringProp name="Argument.value">screen</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFW" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFW</stringProp>
                     <stringProp name="Argument.value">1366</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFH" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFH</stringProp>
                     <stringProp name="Argument.value">635</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFDW" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFDW</stringProp>
                     <stringProp name="Argument.value">1366</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFDH" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFDH</stringProp>
                     <stringProp name="Argument.value">768</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFC" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFC</stringProp>
                     <stringProp name="Argument.value">8</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFCI" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFCI</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFM" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFM</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFR" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFR</stringProp>
                     <stringProp name="Argument.value">96</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFG" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFG</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFS" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFS</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrMFO" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrMFO</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
