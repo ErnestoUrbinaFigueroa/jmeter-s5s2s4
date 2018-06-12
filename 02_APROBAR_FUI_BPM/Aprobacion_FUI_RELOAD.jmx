@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="FOLIO" elementType="Argument">
             <stringProp name="Argument.name">FOLIO</stringProp>
-            <stringProp name="Argument.value">1316</stringProp>
+            <stringProp name="Argument.value">1318</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -4905,7 +4905,7 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="100 /pae-bpm-web/img/success.svg" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="100 /pae-bpm-web/img/success.svg" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -4957,7 +4957,7 @@
               <stringProp name="HTTPSampler.domain">paeqaohs.tecnova.cl</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
               <stringProp name="HTTPSampler.path">/pae-bpm-web/css/bootstrap-datepicker.css.map</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -5161,7 +5161,7 @@
               <stringProp name="HTTPSampler.domain">paeqaohs.tecnova.cl</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
               <stringProp name="HTTPSampler.path">/pae-bpm-web/aprobar?_csrf=${_csrf}</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -5216,7 +5216,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="103 /bpm/workspace/faces/refreshParentTaskList.jspx" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="103 /bpm/workspace/faces/refreshParentTaskList.jspx" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="refreshTaskListBtnId" elementType="HTTPArgument">
@@ -5247,7 +5247,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/guardarFormulario?_csrf=8d979cdf-019f-4b9e-b4e6-6e3381fa688a&amp;bpmWorklistContext=c7f0b6d4-c82e-4444-80da-210915d22694;;G;;Q3YhR3xAiyjiPV4VIqyJPOCs9/OL274hfSnTWHLoKinaaydokhvncA+ETUbxTEkg4aKuJq/MPk4w/YEZsgpvQ9L9aidMRca8ozgcmtLdNvs1aSndXkVjykecjohQ8JvOvai3pAkqrWFyNplBiknz3A==&amp;bpmWorklistTaskId=1ea5bd53-590d-4be2-8428-1d783bbd4b69</stringProp>
+                    <stringProp name="Header.value">http://paeqaohs.tecnova.cl/pae-bpm-web/guardarFormulario?_csrf=${_csrf}&amp;bpmWorklistContext=${bpmWorklistContext}&amp;bpmWorklistTaskId=${bpmWorklistTaskId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -5290,7 +5290,7 @@
                   <elementProp name="_afrLoop" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrLoop</stringProp>
-                    <stringProp name="Argument.value">426437565807376</stringProp>
+                    <stringProp name="Argument.value">${_afrLoop}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5304,7 +5304,7 @@
                   <elementProp name="Adf-Window-Id" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">Adf-Window-Id</stringProp>
-                    <stringProp name="Argument.value">ddce171an</stringProp>
+                    <stringProp name="Argument.value">${Adf-Window-Id}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5455,12 +5455,14 @@
                     <stringProp name="Argument.name">refreshTaskListBtnId</stringProp>
                     <stringProp name="Argument.value">wlctdc:j_id__ctru10:r1:0:tldc:fetchNewTask</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="_afrRedirect" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">_afrRedirect</stringProp>
                     <stringProp name="Argument.value">426438098185659</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -5518,60 +5520,70 @@
                     <stringProp name="Argument.name">wlctdc:j_id__ctru10:r1:0:tldc:keywordFilter</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="wlctdc:j_id__ctru10:r1:0:tldc:assigneeFilter" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">wlctdc:j_id__ctru10:r1:0:tldc:assigneeFilter</stringProp>
                     <stringProp name="Argument.value">3</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="wlctdc:j_id__ctru10:r1:0:tldc:statusFilter" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">wlctdc:j_id__ctru10:r1:0:tldc:statusFilter</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="org.apache.myfaces.trinidad.faces.FORM" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">org.apache.myfaces.trinidad.faces.FORM</stringProp>
                     <stringProp name="Argument.value">f1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="Adf-Window-Id" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">Adf-Window-Id</stringProp>
                     <stringProp name="Argument.value">vrti7f34w</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="Adf-Page-Id" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">Adf-Page-Id</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="javax.faces.ViewState" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">javax.faces.ViewState</stringProp>
                     <stringProp name="Argument.value">!-k10pmmtw9</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="event" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">event</stringProp>
                     <stringProp name="Argument.value">wlctdc:j_id__ctru10:r1:0:tldc:fetchNewTask</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="event.wlctdc:j_id__ctru10:r1:0:tldc:fetchNewTask" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">event.wlctdc:j_id__ctru10:r1:0:tldc:fetchNewTask</stringProp>
                     <stringProp name="Argument.value">&lt;m xmlns=&quot;http://oracle.com/richClient/comm&quot;&gt;&lt;k v=&quot;type&quot;&gt;&lt;s&gt;action&lt;/s&gt;&lt;/k&gt;&lt;/m&gt;</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="oracle.adf.view.rich.PROCESS" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">oracle.adf.view.rich.PROCESS</stringProp>
                     <stringProp name="Argument.value">wlctdc:j_id__ctru10:r1,wlctdc:j_id__ctru10:r1:0:tldc:fetchNewTask</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
