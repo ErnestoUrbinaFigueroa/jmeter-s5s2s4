@@ -35,7 +35,7 @@
           </elementProp>
           <elementProp name="EXPEDIENTE" elementType="Argument">
             <stringProp name="Argument.name">EXPEDIENTE</stringProp>
-            <stringProp name="Argument.value">R-70-2018</stringProp>
+            <stringProp name="Argument.value">R-99-2018</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
