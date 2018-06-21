@@ -102,11 +102,6 @@
             <stringProp name="Argument.value">ernesto.urbina@tecnova.cl</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="doc_prueba" elementType="Argument">
-            <stringProp name="Argument.name">doc_prueba</stringProp>
-            <stringProp name="Argument.value">10_suseso.pdf</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -171,11 +166,71 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">AFP HABITAT S.A.</stringProp>
           </elementProp>
+          <elementProp name="entId" elementType="Argument">
+            <stringProp name="Argument.name">entId</stringProp>
+            <stringProp name="Argument.value">227</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Compin Region Metropolitana</stringProp>
+          </elementProp>
           <elementProp name="folioLicencia" elementType="Argument">
             <stringProp name="Argument.name">folioLicencia</stringProp>
             <stringProp name="Argument.value">19156524-K</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Licencia asociada al rut</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_1" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_1</stringProp>
+            <stringProp name="Argument.value">1088</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 1</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_2" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_2</stringProp>
+            <stringProp name="Argument.value">1102</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 2</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_3" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_3</stringProp>
+            <stringProp name="Argument.value">1141</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 3</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_4" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_4</stringProp>
+            <stringProp name="Argument.value">1171</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 4</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_5" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_5</stringProp>
+            <stringProp name="Argument.value">1246</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 5</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_6" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_6</stringProp>
+            <stringProp name="Argument.value">1249</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 6</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_7" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_7</stringProp>
+            <stringProp name="Argument.value">1279</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 7</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_8" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_8</stringProp>
+            <stringProp name="Argument.value">1287</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 8</stringProp>
+          </elementProp>
+          <elementProp name="tipoDoc_9" elementType="Argument">
+            <stringProp name="Argument.name">tipoDoc_9</stringProp>
+            <stringProp name="Argument.value">1312</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Documento adjunto 9</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
@@ -210,8 +265,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -259,7 +314,7 @@
           <stringProp name="filename">suseso_doc\RESULT_TREE_SUSESO.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3804,6 +3859,16 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sTinId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sTinId</stringProp>
+                <stringProp name="RegexExtractor.regex">sTinId=(.+?)&amp;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_sTinId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04 OBTENER SUBMATERIA" enabled="true">
@@ -4365,13 +4430,13 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="50 /pae-web/ciudadano/fui/reclamante" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="50 /pae-web/ciudadano/fui/reclamante" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Argument.value">${sFunId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -4397,7 +4462,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui?sTinId=rVZg1hjAWqa+U0mEU/tCmw==</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui?sTinId=${sTinId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4425,6 +4490,16 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sFunId</stringProp>
+                <stringProp name="RegexExtractor.regex">sFunId=(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_sFunId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -4656,6 +4731,16 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sFunId</stringProp>
+                <stringProp name="RegexExtractor.regex">sFunId=(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_sFunId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId_enc Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">sFunId_enc</stringProp>
@@ -4666,14 +4751,84 @@
                 <stringProp name="Sample.scope">all</stringProp>
               </RegexExtractor>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="tinId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">tinId</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;input id=&quot;tinId&quot; name=&quot;tinId&quot; name=&quot;tinId&quot; type=&quot;hidden&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_tinId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="recId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">recId</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;input id=&quot;recId&quot; name=&quot;recId&quot; name=&quot;recId&quot; type=&quot;hidden&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_recId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="remId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">remId</stringProp>
+                <stringProp name="RegexExtractor.regex">remId&quot; type=&quot;hidden&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_remId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="lmeId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">lmeId</stringProp>
+                <stringProp name="RegexExtractor.regex">lmeId&quot; type=&quot;hidden&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_lmeId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="runAfectado Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">runAfectado</stringProp>
+                <stringProp name="RegexExtractor.regex">name=&quot;runAfectado&quot; type=&quot;hidden&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_runAfectado</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="natId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">natId</stringProp>
+                <stringProp name="RegexExtractor.regex">natId&quot;.+type=&quot;radio&quot; value=&quot;(.+?)&quot; checked=&quot;checked&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">natId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="patId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">patId</stringProp>
+                <stringProp name="RegexExtractor.regex">patologia.patId&quot; name=&quot;patologiaIdLM&quot;.+value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_patId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="52 /pae-web/ciudadano/fui/caracterizacion" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="52 /pae-web/ciudadano/fui/caracterizacion" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Argument.value">${sFunId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -4699,7 +4854,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/reclamante?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/reclamante?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4728,7 +4883,23 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sFunId</stringProp>
+                <stringProp name="RegexExtractor.regex">sFunId=(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_sFunId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler 01" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="09 BUSCAR FOLIO LICENCIA" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -4741,7 +4912,7 @@
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">${sFunId}</stringProp>
+                    <stringProp name="Argument.value">${sFunId_enc}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -4812,8 +4983,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="54 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_1}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_1}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -4886,23 +5057,58 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_1 JSON Extractor" enabled="true">
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_1 Extractor" enabled="false">
                 <stringProp name="JSONPostProcessor.referenceNames">initialPreview_1</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.messageFileUpload.initialPreview</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_1</stringProp>
               </JSONPostProcessor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_1 JSON Extractor" enabled="true">
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_1 Extractor" enabled="false">
                 <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_1</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.messageFileUpload.initialPreviewConfig</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_1</stringProp>
               </JSONPostProcessor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">String getToken = vars.get(&quot;initialPreview_1&quot;);
+getToken = getToken.replaceAll(&quot;\\&quot;, &quot;&quot;);
+vars.put(&quot;initialPreview_1&quot;,getToken);</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_1 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_1</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_1</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_1 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_1</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_1</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="11 UPLOAD DOCUMENTO 02" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -4912,8 +5118,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="56 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_2}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_2}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -4986,21 +5192,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_2 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_2</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_2</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_2 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_2</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_2</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_2 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_2</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_2</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_2 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_2</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_2</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5012,8 +5222,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="57 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_3}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_3}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5086,25 +5296,29 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_3 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_3</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_3</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_3 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_3</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_3</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_3 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_3</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_3</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_3 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_3</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_3</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="13  UPLOAD DOCUMENTO 04" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="13 UPLOAD DOCUMENTO 04" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
@@ -5112,8 +5326,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="58 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_4}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_4}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5186,21 +5400,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_4 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_4</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_4</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_4 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_4</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_4</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_4 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_4</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_4</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_4 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_4</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_4</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5212,8 +5430,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="59 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_5}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_5}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5286,21 +5504,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_5 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_5</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_5</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_5 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_5</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_5</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_5 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_5</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_5</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_5 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_5</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_5</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5312,8 +5534,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="60 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_6}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_6}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5386,21 +5608,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_6 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_6</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_6</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_6 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_6</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_6</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_6 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_6</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_6</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_6 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_6</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_6</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5412,8 +5638,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="61 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_7}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_7}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5486,21 +5712,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_7 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_7</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_7</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_7 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_7</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_7</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_7 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_7</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_7</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_7 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_7</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_7</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5512,8 +5742,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="62 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_8}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_8}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5586,21 +5816,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_8 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_8</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_8</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_8 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_8</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_8</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_8 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_8</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_8</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_8 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_8</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_8</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5612,8 +5846,8 @@
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="63 /pae-web/fm/upload.json" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="10_suseso.pdf" elementType="HTTPFileArg">
-                    <stringProp name="File.path">10_suseso.pdf</stringProp>
+                  <elementProp name="${doc_suseso_9}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${doc_suseso_9}</stringProp>
                     <stringProp name="File.paramname">file</stringProp>
                     <stringProp name="File.mimetype">application/pdf</stringProp>
                   </elementProp>
@@ -5686,21 +5920,25 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_9 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_9</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreview&quot; : (\[ &quot;.+?&quot; \])</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_9</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_9 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreview_9</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreview&quot; : (.+?),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreview_9</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_9 JSON Extractor" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_9</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_9</stringProp>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreviewConfig_9 Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">initialPreviewConfig_9</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;initialPreviewConfig&quot; : (\[ \{[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+[\s].+),</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_initialPreviewConfig_9</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
+              </RegexExtractor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -5715,91 +5953,91 @@
                   <elementProp name="runAfectado" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">runAfectado</stringProp>
-                    <stringProp name="Argument.value">15073423-1</stringProp>
+                    <stringProp name="Argument.value">${runAfectado}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="tinId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">tinId</stringProp>
-                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.value">${tinId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY/YWxA4aLc6K7eko2L92g==</stringProp>
+                    <stringProp name="Argument.value">${sFunId_enc}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="recId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">recId</stringProp>
-                    <stringProp name="Argument.value">3025</stringProp>
+                    <stringProp name="Argument.value">${recId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].remId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].remId</stringProp>
-                    <stringProp name="Argument.value">3350</stringProp>
+                    <stringProp name="Argument.value">${remId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeId</stringProp>
-                    <stringProp name="Argument.value">0</stringProp>
+                    <stringProp name="Argument.value">${lmeId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].materiaDTO.matId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].materiaDTO.matId</stringProp>
-                    <stringProp name="Argument.value">84</stringProp>
+                    <stringProp name="Argument.value">${materia}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].subMateriaDTO.subId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].subMateriaDTO.subId</stringProp>
-                    <stringProp name="Argument.value">504</stringProp>
+                    <stringProp name="Argument.value">${submateria}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].causalDTO.cauId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].causalDTO.cauId</stringProp>
-                    <stringProp name="Argument.value">303</stringProp>
+                    <stringProp name="Argument.value">${causa}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.lmeFolio" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.lmeFolio</stringProp>
-                    <stringProp name="Argument.value">19156524-K</stringProp>
+                    <stringProp name="Argument.value">${folioLicencia}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.naturaleza.natId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.naturaleza.natId</stringProp>
-                    <stringProp name="Argument.value">2</stringProp>
+                    <stringProp name="Argument.value">${natId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.entidade.entId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.entidade.entId</stringProp>
-                    <stringProp name="Argument.value">227</stringProp>
+                    <stringProp name="Argument.value">${entId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.patologia.patId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.patologia.patId</stringProp>
-                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.value">${patId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5813,7 +6051,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1088</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_1}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5827,7 +6065,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rXkQ1VXlXoJDHIwr3NW4AEQ=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rXkQ1VXlXoJDHIwr3NW4AEQ=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rXkQ1VXlXoJDHIwr3NW4AEQ=&quot;,&quot;key&quot;:&quot;0162029964&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_1},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_1}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5841,7 +6079,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1102</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_2}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5855,7 +6093,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rb2AGX7jtxFd7LYPIqtF7wY=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rb2AGX7jtxFd7LYPIqtF7wY=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rb2AGX7jtxFd7LYPIqtF7wY=&quot;,&quot;key&quot;:&quot;0162029965&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_2},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_2}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5869,7 +6107,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1141</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_3}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5883,7 +6121,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rZzgkxUT6ZNg2mOv7SatEhQ=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rZzgkxUT6ZNg2mOv7SatEhQ=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rZzgkxUT6ZNg2mOv7SatEhQ=&quot;,&quot;key&quot;:&quot;0162029966&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_3},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_3}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5897,7 +6135,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[3].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[3].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1171</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_4}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5911,7 +6149,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[3].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[3].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rVcpA5kqo2HbBBlFR+/A6fo=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rVcpA5kqo2HbBBlFR+/A6fo=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rVcpA5kqo2HbBBlFR+/A6fo=&quot;,&quot;key&quot;:&quot;0162029967&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_4},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_4}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5925,7 +6163,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[4].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[4].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1246</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_5}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5939,7 +6177,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[4].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[4].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rXwtiRkRLrCgTqVqBKT4xdY=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rXwtiRkRLrCgTqVqBKT4xdY=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rXwtiRkRLrCgTqVqBKT4xdY=&quot;,&quot;key&quot;:&quot;0162029968&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_5},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_5}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5953,7 +6191,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[5].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[5].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1249</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_6}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5967,7 +6205,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[5].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[5].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rQ7J+FGLVefPGxLZuVoNnws=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rQ7J+FGLVefPGxLZuVoNnws=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rQ7J+FGLVefPGxLZuVoNnws=&quot;,&quot;key&quot;:&quot;0162029969&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_6},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_6}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5981,7 +6219,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[6].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[6].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1279</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_7}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -5995,7 +6233,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[6].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[6].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rXWv6vahR9dnFQX6H6gx7kg=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rXWv6vahR9dnFQX6H6gx7kg=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rXWv6vahR9dnFQX6H6gx7kg=&quot;,&quot;key&quot;:&quot;0162029970&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_7},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_7}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6009,7 +6247,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[7].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[7].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1287</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_8}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6023,7 +6261,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[7].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[7].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rfEhKJTlGwx2kAEUs0fT8zI=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rfEhKJTlGwx2kAEUs0fT8zI=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rfEhKJTlGwx2kAEUs0fT8zI=&quot;,&quot;key&quot;:&quot;0162029971&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_8},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_8}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6037,7 +6275,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[8].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[8].tiposDocumento.tdcId</stringProp>
-                    <stringProp name="Argument.value">1312</stringProp>
+                    <stringProp name="Argument.value">${tipoDoc_9}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6051,7 +6289,7 @@
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[8].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[8].jsonObj</stringProp>
-                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rfHifNqSYKrH4rdZYgDsCyE=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rfHifNqSYKrH4rdZYgDsCyE=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rfHifNqSYKrH4rdZYgDsCyE=&quot;,&quot;key&quot;:&quot;0162029972&quot;,&quot;arcId&quot;:0}]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;initialPreview&quot;:${initialPreview_9},&quot;initialPreviewConfig&quot;:${initialPreviewConfig_9}}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6061,7 +6299,7 @@
               <stringProp name="HTTPSampler.port">${PORT}</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-              <stringProp name="HTTPSampler.path">/pae-web/ciudadano/fui/caracterizacion?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+              <stringProp name="HTTPSampler.path">/pae-web/ciudadano/fui/caracterizacion?sFunId=${sFunId}</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6077,7 +6315,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/caracterizacion?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/caracterizacion?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6114,15 +6352,26 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sFunId</stringProp>
+                <stringProp name="RegexExtractor.regex">sFunId=(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_sFunId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="65 /pae-web/ciudadano/fui/resumen" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="65 /pae-web/ciudadano/fui/resumen" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Argument.value">${sFunId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -6146,7 +6395,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/caracterizacion?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/caracterizacion?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6175,6 +6424,16 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sFunId</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;form id=&quot;formResumen&quot;.+sFunId=(.+?)&quot; method=&quot;post&quot;&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_sFunId</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="66 /pae-web/xsl/resumen.xslt" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -6182,7 +6441,7 @@
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Argument.value">${sFunId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6207,7 +6466,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/resumen?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/resumen?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6233,6 +6492,12 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="20 APROBAR RESUMEN" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -6252,7 +6517,7 @@
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Argument.value">${sFunId_enc}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6276,7 +6541,7 @@
               <stringProp name="HTTPSampler.port">${PORT}</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/pae-web/ciudadano/fui/resumen/?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+              <stringProp name="HTTPSampler.path">/pae-web/ciudadano/fui/resumen/?sFunId=${sFunId_enc}</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6292,7 +6557,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/resumen?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/resumen?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6336,13 +6601,13 @@
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="69 /pae-web/ciudadano/fui/terminar" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="69 /pae-web/ciudadano/fui/terminar" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
-                    <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Argument.value">${sFunId}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -6368,7 +6633,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/resumen?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/resumen?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6396,6 +6661,79 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="folioGenerado Regular Expression Extractor" enabled="true">
+                <stringProp name="TestPlan.comments">Obtenemos el folio generado al ingresar el reclamo.</stringProp>
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">folioGenerado</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;h3&gt;El folio de su presentación es el&lt;/h3&gt;[\s]*&lt;h2&gt;(.*)&lt;/h2&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NO_folioGenerado</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extractor de Folios BeanShell PostProcessor" enabled="true">
+                <stringProp name="TestPlan.comments">Extrator de los folios generados por el ingreso de los reclamos.</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script"> // obtenemos la variable desde la expresión regular
+ folio = vars.get(&quot;folioGenerado&quot;);
+ user = vars.get(&quot;user&quot;);
+
+ // true: si queremos hacer un append al archivos csv FileWriter(&quot;suseso_doc/Folios_Generados.csv&quot;, true);
+ // no pasar el segundo argumento si queremos sobreescribir.
+ FileWriter fstream = new FileWriter(&quot;suseso_doc/Folios_Generados.csv&quot;, true);
+ BufferedWriter out = new BufferedWriter(fstream);
+ out.write(user + &quot;,&quot; + folio);
+ out.write(System.getProperty(&quot;line.separator&quot;));
+ out.close();
+ fstream.close();</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1825964484">&lt;p&gt;Los datos de la presentación han sido ingresados correctamente&lt;/p&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message">No se ha podido generar un nuevo folio !!</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+                <boolProp name="ResultCollector.error_logging">false</boolProp>
+                <objProp>
+                  <name>saveConfig</name>
+                  <value class="SampleSaveConfiguration">
+                    <time>true</time>
+                    <latency>true</latency>
+                    <timestamp>true</timestamp>
+                    <success>true</success>
+                    <label>true</label>
+                    <code>true</code>
+                    <message>true</message>
+                    <threadName>true</threadName>
+                    <dataType>true</dataType>
+                    <encoding>false</encoding>
+                    <assertions>true</assertions>
+                    <subresults>false</subresults>
+                    <responseData>false</responseData>
+                    <samplerData>false</samplerData>
+                    <xml>false</xml>
+                    <fieldNames>true</fieldNames>
+                    <responseHeaders>false</responseHeaders>
+                    <requestHeaders>false</requestHeaders>
+                    <responseDataOnError>false</responseDataOnError>
+                    <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                    <assertionsResultsToSave>0</assertionsResultsToSave>
+                    <threadCounts>true</threadCounts>
+                    <connectTime>true</connectTime>
+                  </value>
+                </objProp>
+                <stringProp name="TestPlan.comments">Validamos la generación de nuevos folios.</stringProp>
+                <stringProp name="filename">suseso_doc\Validacion_Folios.csv</stringProp>
+              </ResultCollector>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -6428,7 +6766,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/terminar?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/terminar?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6454,7 +6792,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="71 /pae-web/loginCiudadano" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="71 /pae-web/loginCiudadano" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="logout" elementType="HTTPArgument">
@@ -6485,7 +6823,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/terminar?sFunId=mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
+                    <stringProp name="Header.value">http://${SERVER}:${PORT}/pae-web/ciudadano/fui/terminar?sFunId=${sFunId}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -7870,12 +8208,14 @@
                     <stringProp name="Argument.name">sFunId</stringProp>
                     <stringProp name="Argument.value">X9dD5pntbKBTsz/klfr83g==</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="folio" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">folio</stringProp>
                     <stringProp name="Argument.value">19156524-K</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -9120,6 +9460,7 @@
                     <stringProp name="Argument.name">sFunId</stringProp>
                     <stringProp name="Argument.value">X9dD5pntbKBTsz%2Fklfr83g%3D%3D</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -14261,144 +14602,168 @@
                     <stringProp name="Argument.name">runAfectado</stringProp>
                     <stringProp name="Argument.value">15073423-1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="tinId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">tinId</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
                     <stringProp name="Argument.value">mY/YWxA4aLc6K7eko2L92g==</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="recId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">recId</stringProp>
                     <stringProp name="Argument.value">3025</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].remId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].remId</stringProp>
                     <stringProp name="Argument.value">3350</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeId</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].materiaDTO.matId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].materiaDTO.matId</stringProp>
                     <stringProp name="Argument.value">84</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].subMateriaDTO.subId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].subMateriaDTO.subId</stringProp>
                     <stringProp name="Argument.value">504</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].causalDTO.cauId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].causalDTO.cauId</stringProp>
                     <stringProp name="Argument.value">303</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.lmeFolio" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.lmeFolio</stringProp>
                     <stringProp name="Argument.value">19156524-K</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.naturaleza.natId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.naturaleza.natId</stringProp>
                     <stringProp name="Argument.value">2</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.entidade.entId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.entidade.entId</stringProp>
                     <stringProp name="Argument.value">227</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lmeDTO.patologia.patId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lmeDTO.patologia.patId</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].docId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].docId</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].tiposDocumento.tdcId</stringProp>
                     <stringProp name="Argument.value">1088</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="file" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">file</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[0].jsonObj</stringProp>
                     <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rXkQ1VXlXoJDHIwr3NW4AEQ=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rXkQ1VXlXoJDHIwr3NW4AEQ=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rXkQ1VXlXoJDHIwr3NW4AEQ=&quot;,&quot;key&quot;:&quot;0162029964&quot;,&quot;arcId&quot;:0}]}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].docId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].docId</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].tiposDocumento.tdcId</stringProp>
                     <stringProp name="Argument.value">1102</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="file" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">file</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[1].jsonObj</stringProp>
                     <stringProp name="Argument.value">{&quot;initialPreview&quot;:[&quot;http://${SERVER}:${PORT}/pae-web/fm/download?sWccId=ivEWQc+0q8kaFpcZZpx7rb2AGX7jtxFd7LYPIqtF7wY=&quot;],&quot;initialPreviewConfig&quot;:[{&quot;type&quot;:&quot;pdf&quot;,&quot;filetype&quot;:&quot;application/pdf&quot;,&quot;size&quot;:550044,&quot;caption&quot;:&quot;10_suseso.pdf&quot;,&quot;url&quot;:&quot;http://${SERVER}:${PORT}/pae-web/fm/deleteWCC.json?sWccId=ivEWQc+0q8kaFpcZZpx7rb2AGX7jtxFd7LYPIqtF7wY=&quot;,&quot;wccId&quot;:&quot;ivEWQc+0q8kaFpcZZpx7rb2AGX7jtxFd7LYPIqtF7wY=&quot;,&quot;key&quot;:&quot;0162029965&quot;,&quot;arcId&quot;:0}]}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].docId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].docId</stringProp>
                     <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].tiposDocumento.tdcId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].tiposDocumento.tdcId</stringProp>
                     <stringProp name="Argument.value">1141</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="file" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">file</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="lstFuiCaracterizacionLMModel[0].lstFuiCaracterizacionDetailModel[2].jsonObj" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
@@ -14738,24 +15103,28 @@
                     <stringProp name="Argument.name">tinId</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sFunId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sFunId</stringProp>
                     <stringProp name="Argument.value">mY%2FYWxA4aLc6K7eko2L92g%3D%3D</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="funAceptarCond" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">funAceptarCond</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="funAceptarNotificacionEmail" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">funAceptarNotificacionEmail</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
