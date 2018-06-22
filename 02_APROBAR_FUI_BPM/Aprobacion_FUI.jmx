@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="FOLIO" elementType="Argument">
             <stringProp name="Argument.name">FOLIO</stringProp>
-            <stringProp name="Argument.value">1378</stringProp>
+            <stringProp name="Argument.value">1395</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -66,13 +66,13 @@
       </CacheManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">2</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">3</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -562,6 +562,19 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="USER-PASS CSV Data Set Config" enabled="true">
+                <stringProp name="TestPlan.comments">Parametrizacion de USER-PASS-FOLIO para los reclamos realizados.</stringProp>
+                <stringProp name="delimiter">,</stringProp>
+                <stringProp name="fileEncoding"></stringProp>
+                <stringProp name="filename">suseso_doc\PARAM_USER_02_APROBAR_FUI.csv</stringProp>
+                <boolProp name="ignoreFirstLine">false</boolProp>
+                <boolProp name="quotedData">true</boolProp>
+                <boolProp name="recycle">true</boolProp>
+                <stringProp name="shareMode">shareMode.all</stringProp>
+                <boolProp name="stopThread">false</boolProp>
+                <stringProp name="variableNames">user,pass</stringProp>
+              </CSVDataSet>
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="59 /bpm/workspace" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -701,6 +714,12 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler USER-PASS" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03 AUTOLOAD" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -1223,10 +1242,23 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="FOLIO CSV Data Set Config" enabled="true">
+                <stringProp name="TestPlan.comments">Parametrizacion de FOLIO para los reclamos realizados.</stringProp>
+                <stringProp name="delimiter">,</stringProp>
+                <stringProp name="fileEncoding"></stringProp>
+                <stringProp name="filename">suseso_doc\Folios_Generados_01_FUI.csv</stringProp>
+                <boolProp name="ignoreFirstLine">false</boolProp>
+                <boolProp name="quotedData">true</boolProp>
+                <boolProp name="recycle">true</boolProp>
+                <stringProp name="shareMode">shareMode.all</stringProp>
+                <boolProp name="stopThread">false</boolProp>
+                <stringProp name="variableNames">runAfectado,folio</stringProp>
+              </CSVDataSet>
+              <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="posicion_folio Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">posicion_folio</stringProp>
-                <stringProp name="RegexExtractor.regex">wlctdc:j_id__ctru10:r1:0:tldc:taskTable:([0-9]{1,2}):cksl1 &quot; href=&quot;#&quot;&gt;ANALIZAR FORMULARIO UNICO - ${FOLIO}</stringProp>
+                <stringProp name="RegexExtractor.regex">wlctdc:j_id__ctru10:r1:0:tldc:taskTable:([0-9]{1,2}):cksl1 &quot; href=&quot;#&quot;&gt;ANALIZAR FORMULARIO UNICO - ${folio}</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NO_posicion_folio</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1244,7 +1276,7 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler FOLIO" enabled="true">
               <boolProp name="displayJMeterProperties">false</boolProp>
               <boolProp name="displayJMeterVariables">true</boolProp>
               <boolProp name="displaySystemProperties">false</boolProp>
