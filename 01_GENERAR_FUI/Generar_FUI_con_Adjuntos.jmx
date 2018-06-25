@@ -260,13 +260,13 @@
       </CacheManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Ciudadanos Thread Group" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">6</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -5057,31 +5057,6 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreview_1 Extractor" enabled="false">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreview_1</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">$.messageFileUpload.initialPreview</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="Sample.scope">all</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreview_1</stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="initialPreviewConfig_1 Extractor" enabled="false">
-                <stringProp name="JSONPostProcessor.referenceNames">initialPreviewConfig_1</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">$.messageFileUpload.initialPreviewConfig</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
-                <stringProp name="Sample.scope">all</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">NO_initialPreviewConfig_1</stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
-                <boolProp name="resetInterpreter">false</boolProp>
-                <stringProp name="parameters"></stringProp>
-                <stringProp name="filename"></stringProp>
-                <stringProp name="script">String getToken = vars.get(&quot;initialPreview_1&quot;);
-getToken = getToken.replaceAll(&quot;\\&quot;, &quot;&quot;);
-vars.put(&quot;initialPreview_1&quot;,getToken);</stringProp>
-              </BeanShellPostProcessor>
-              <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="initialPreview_1 Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">initialPreview_1</stringProp>
@@ -5103,7 +5078,7 @@ vars.put(&quot;initialPreview_1&quot;,getToken);</stringProp>
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
               <boolProp name="displayJMeterProperties">false</boolProp>
               <boolProp name="displayJMeterVariables">true</boolProp>
               <boolProp name="displaySystemProperties">false</boolProp>
