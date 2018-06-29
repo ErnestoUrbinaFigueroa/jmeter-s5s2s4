@@ -18,3 +18,12 @@ http://${SERVER}/pae-bpm-web/estudiar?refreshParentURL=${refreshParentURL}&bpmWo
 
 24:
 http://${SERVER}/pae-bpm-web/estudiar?refreshParentURL=${refreshParentURL}&bpmWorklistTaskId=${bpmWorklistTaskId}&bpmWorklistContext=${bpmWorklistContext}&bpmWorklistHttpURL=${bpmWorklistHttpURL}&bpmWorklistHome=${bpmWorklistHome}&bpmWorklistReassign=${bpmWorklistReassign}&bpmWorklistRoute=${bpmWorklistRoute}&bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&bpmWorklistSecurity=${bpmWorklistSecurity}&tz=Chile%2FContinental&lg=es&cy=ES&vr=&dispNameLg=es&dispNameCy=ES&dispNameVr=&df=medium&dt=both&tf=short&sf=alta&acMode=default&bpmWorklistSessionTimeoutInterval=900&soaUrl=${soaUrl}&
+
+22:
+{wlctdc:j_id__ctru10:r1:0:tldc:taskTable={rows=3,_afrActiveRowKey=37,activeRowKey=37,_afrRemainReadOnly=false,selectedRowKeys=37}}
+
+26:
+http://${SERVER}/pae-bpm-web/estudiar?refreshParentURL=${refreshParentURL}&bpmWorklistTaskId=${bpmWorklistTaskId}&bpmWorklistContext=${bpmWorklistContext}&bpmWorklistHttpURL=${bpmWorklistHttpURL}&bpmWorklistHome=${bpmWorklistHome}&bpmWorklistReassign=${bpmWorklistReassign}&bpmWorklistRoute=${bpmWorklistRoute}&bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&bpmWorklistSecurity=${bpmWorklistSecurity}&tz=Chile%2FContinental&lg=es&cy=ES&vr=&dispNameLg=es&dispNameCy=ES&dispNameVr=&df=medium&dt=both&tf=short&sf=alta&acMode=default&bpmWorklistSessionTimeoutInterval=900&soaUrl=${soaUrl}&
+
+35:
+http://${SERVER}/pae-bpm-web/estudiar?refreshParentURL=${refreshParentURL}&bpmWorklistTaskId=${bpmWorklistTaskId}&bpmWorklistContext=${bpmWorklistContext}&bpmWorklistHttpURL=${bpmWorklistHttpURL}&bpmWorklistHome=${bpmWorklistHome}&bpmWorklistReassign=${bpmWorklistReassign}&bpmWorklistRoute=${bpmWorklistRoute}&bpmWorklistRequestInfo=${bpmWorklistRequestInfo}&bpmWorklistSecurity=${bpmWorklistSecurity}&tz=Chile%2FContinental&lg=es&cy=ES&vr=&dispNameLg=es&dispNameCy=ES&dispNameVr=&df=medium&dt=both&tf=short&sf=alta&acMode=default&bpmWorklistSessionTimeoutInterval=900&soaUrl=${soaUrl}&
