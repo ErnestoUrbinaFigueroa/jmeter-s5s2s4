@@ -64,7 +64,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">2</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -77,6 +77,19 @@
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ASIGNAR PROFESIONAL" enabled="true"/>
         <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="USER-PASS-EXPEDIENTE CSV Data Set Config" enabled="true">
+            <stringProp name="TestPlan.comments">Parametrizacion de USER-PASS-FOLIO para los reclamos realizados.</stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">suseso_doc\PARAM_USER_03_ASIGNAR_PROFESIONAL.csv</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">user,pass,expediente</stringProp>
+          </CSVDataSet>
+          <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
@@ -629,19 +642,6 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree/>
-              <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="USER-PASS-EXPEDIENTE CSV Data Set Config" enabled="true">
-                <stringProp name="TestPlan.comments">Parametrizacion de USER-PASS-FOLIO para los reclamos realizados.</stringProp>
-                <stringProp name="delimiter">,</stringProp>
-                <stringProp name="fileEncoding"></stringProp>
-                <stringProp name="filename">suseso_doc\PARAM_USER_03_ASIGNAR_PROFESIONAL.csv</stringProp>
-                <boolProp name="ignoreFirstLine">false</boolProp>
-                <boolProp name="quotedData">true</boolProp>
-                <boolProp name="recycle">true</boolProp>
-                <stringProp name="shareMode">shareMode.all</stringProp>
-                <boolProp name="stopThread">false</boolProp>
-                <stringProp name="variableNames">user,pass,expediente</stringProp>
-              </CSVDataSet>
               <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Adf-Window-Id Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>

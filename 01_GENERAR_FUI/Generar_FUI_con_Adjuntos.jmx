@@ -268,7 +268,7 @@
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">3</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -316,7 +316,7 @@
               <sampleCount>true</sampleCount>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Repositorio\suse-pae\03_pruebas\06_Automatizacion\01_GENERAR_FUI\suseso_doc\RESULT_TREE_SUSESO.csv</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
@@ -7624,7 +7624,7 @@
 
  // true: si queremos hacer un append al archivos csv FileWriter(&quot;suseso_doc/Folios_Generados.csv&quot;, true);
  // no pasar el segundo argumento si queremos sobreescribir.
- FileWriter fstream = new FileWriter(&quot;C:/Repositorio/suse-pae/03_pruebas/06_Automatizacion/01_GENERAR_FUI/suseso_doc/Folios_Generados.csv&quot;, true);
+ FileWriter fstream = new FileWriter(&quot;suseso_doc/Folios_Generados.csv&quot;, true);
  BufferedWriter out = new BufferedWriter(fstream);
  out.write(user + &quot;,&quot; + folio);
  out.write(System.getProperty(&quot;line.separator&quot;));

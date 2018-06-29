@@ -92,6 +92,19 @@
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="VALIDAR COMPLETITUD EXPEDIENTE" enabled="true"/>
         <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="USER-PASS-EXPEDIENTE CSV Data Set Config" enabled="true">
+            <stringProp name="TestPlan.comments">Parametrizacion de USER-PASS-FOLIO para los reclamos realizados.</stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">suseso_doc\PARAM_USER_02_VALIDAR_COMPLETITUD.csv</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">user,pass,expediente</stringProp>
+          </CSVDataSet>
+          <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
@@ -574,14 +587,14 @@
                   <elementProp name="j_username" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">j_username</stringProp>
-                    <stringProp name="Argument.value">${USER}</stringProp>
+                    <stringProp name="Argument.value">${user}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="j_password" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">j_password</stringProp>
-                    <stringProp name="Argument.value">${PASS}</stringProp>
+                    <stringProp name="Argument.value">${pass}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1246,7 +1259,7 @@
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="nro_expediente Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">nro_expediente</stringProp>
-                <stringProp name="RegexExtractor.regex">aria-labelledby=&quot;wlctdc:j_id__ctru10:r1:0:tldc:taskTable:([0-9]{1,2}?):cksl1 &quot; href=&quot;#&quot;&gt;VALIDAR COMPLETITUD EXPEDIENTE - ${EXPEDIENTE}&lt;</stringProp>
+                <stringProp name="RegexExtractor.regex">aria-labelledby=&quot;wlctdc:j_id__ctru10:r1:0:tldc:taskTable:([0-9]{1,2}?):cksl1 &quot; href=&quot;#&quot;&gt;VALIDAR COMPLETITUD EXPEDIENTE - ${expediente}&lt;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NO_nro_expediente</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
