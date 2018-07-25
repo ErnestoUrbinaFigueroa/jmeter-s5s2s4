@@ -3802,6 +3802,12 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler 01" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03 HACER RECLAMO FUI" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -4749,7 +4755,7 @@
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sFunId_enc Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">sFunId_enc</stringProp>
-                <stringProp name="RegexExtractor.regex">&lt;input id=&quot;sFunId&quot; name=&quot;sFunId&quot; name=&quot;sFunId&quot; type=&quot;hidden&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; id=&quot;auxFunId&quot; name=&quot;auxFunId&quot; data-sfunid=&quot;(.+?)&quot;/&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NO_sFunId_enc</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
