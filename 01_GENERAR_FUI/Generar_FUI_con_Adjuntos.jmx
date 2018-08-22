@@ -270,7 +270,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
@@ -7613,7 +7613,7 @@
                 <stringProp name="TestPlan.comments">Obtenemos el folio generado al ingresar el reclamo.</stringProp>
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">folioGenerado</stringProp>
-                <stringProp name="RegexExtractor.regex">&lt;h3&gt;El folio de su presentación es el&lt;/h3&gt;[\s]*&lt;h2&gt;(.*)&lt;/h2&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">El folio de su presentación es el[\s]*&lt;/h3&gt;[\s]*&lt;h2&gt;(.*)&lt;/h2&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NO_folioGenerado</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -7640,7 +7640,7 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1825964484">&lt;p&gt;Los datos de la presentación han sido ingresados correctamente&lt;/p&gt;</stringProp>
+                  <stringProp name="-1554369103">Los datos de la presentación han sido ingresados correctamente</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.custom_message">No se ha podido generar un nuevo folio !!</stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
